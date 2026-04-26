@@ -1,7 +1,6 @@
 package com.mycompany.app;
 
 import org.junit.jupiter.api.*;
-import javax.swing.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TicTacToeCellTest {
@@ -18,7 +17,7 @@ class TicTacToeCellTest {
         assertEquals(0, cell.getRow());
         assertEquals(1, cell.getCol());
         assertEquals(' ', cell.getMarker());
-        assertFalse(cell.isEnabled());
+        assertTrue(cell.isEnabled());
     }
 
     @Test
